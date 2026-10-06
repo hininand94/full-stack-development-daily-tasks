@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Navigation</title>
+    link rel="stylesheet" href="Style4.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #222;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        MyWebsite
+    </div>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+</nav>
+
+</body>
+</html>
