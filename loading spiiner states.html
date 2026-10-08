@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Loading Spinner</title>
+
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 3px solid #ccc;
+            border-top: 3px solid black;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 8px;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Loading Spinner</h2>
+
+    <button onclick="submitButton()" id="submitBtn">
+        Submit
+    </button>
+
+    <script>
+        function submitButton() {
+            let button = document.getElementById("submitBtn");
+
+            button.innerHTML = 'Loading <span class="spinner"></span>';
+            button.disabled = true;
+        }
+    </script>
+
+</body>
+</html>

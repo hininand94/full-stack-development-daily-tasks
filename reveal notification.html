@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Notification</title>
+
+    <style>
+        #notification {
+            display: none;
+            padding: 15px;
+            background-color: lightgreen;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Click-to-Reveal Notification</h2>
+
+    <button onclick="showNotification()">Show</button>
+
+    <div id="notification">
+        🔔 You have a new notification!
+    </div>
+
+    <script>
+        function showNotification() {
+            document.getElementById("notification").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
